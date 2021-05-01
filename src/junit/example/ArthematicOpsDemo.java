@@ -1,19 +1,18 @@
 package junit.example;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
 
 public class ArthematicOpsDemo {
 	
-	@Test
+	//@Test
 	public static void main(String[] args) {
-		ArthematicOps obj = new ArthematicOps();
+		Calculator obj = new Calculator();
 		int a=7;
 		int b=8;
 		int expected = 15;
 		int actual = obj.addittion(a, b);
+		System.out.println(actual);
 		
-		Assertions.assertEquals(expected, actual);
+		//Assertions.assertEquals(expected, actual);
 
 	}
 
